@@ -1,5 +1,8 @@
 import React from 'react'
 import LogoCart from './assets/cart.jpg'
+
+
+
 function CartWidget() {
   return (
     <div className='flex items-center relative'>
