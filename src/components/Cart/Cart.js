@@ -21,7 +21,7 @@ const Cart = () => {
         );
     }
     return (
-        <div className="container  bg-white  rounded-xl shadow-md m-auto py-7">
+        <div className="container  bg-white  rounded-xl shadow-md m-auto p-3 md:p-7">
             {cart.map(product => <ItemCart key={product.id} product={product} />)}
             <p className="flex justify-center text-2xl m-10 font-bold">Total: ${totalPrice()}</p>
             <div >
