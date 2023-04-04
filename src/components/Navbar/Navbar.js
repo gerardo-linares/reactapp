@@ -15,11 +15,9 @@ const[openMenu, setOpenMenu] = useState(false)
 
             </div>
             <nav className={openMenu ? "bg-primary absolute flex flex-col right-6 top-[50px] h-[250px] gap-10 px-8 justify-center text-end rounded-b-3xl shadow-xl "   :    " hidden md:flex md:gap-5 md:flex-row md:justify-between md:text-center md:static md:right-auto md:top-auto md:h-auto md:shadow-none " } onClick={() => setOpenMenu(false)}>
-                <Link to = "/category/Hogar" className='text-white font-semibold hover:text-secondary transition-all delay-50'>Hogar</Link>
-                <Link to = "/category/Figuras" className='text-white font-semibold  hover:text-secondary transition-all delay-50'>Figuras</Link>
-                <Link to = "/category/Personalizados" className='text-white font-semibold  hover:text-secondary transition-all delay-50'>Personalizados</Link>
-
-
+                <Link to = "/category/hogar" className='text-white font-semibold hover:text-secondary transition-all delay-50'>Hogar</Link>
+                <Link to = "/category/figuras" className='text-white font-semibold  hover:text-secondary transition-all delay-50'>Figuras</Link>
+                <Link to = "/category/personalizados" className='text-white font-semibold  hover:text-secondary transition-all delay-50'>Personalizados</Link>
             </nav>
             <div className='flex gap-5'>
                 <button><CartWidget /></button>

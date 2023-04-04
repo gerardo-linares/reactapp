@@ -23,7 +23,7 @@ const ItemDetailContainer = () => {
 
   return (
     <section className='container mx-auto my-[100px] '>
-      <h1 className='text-primary text-center text-6xl font-bold'></h1>
+      <h1 className='text-primary text-center text-6xl font-bold'>Detalle</h1>
       <ItemDetail {...product}/>
     </section>
   )

@@ -30,7 +30,7 @@ const ItemCount = ({ stock = 0, initial = 1, onAdd }) => {
             </div>
         </div>
     )
-//REVISAR SINTAXIS EN COMPONENTE BUTTON CALLBACK AGREGAR AL CARRITO
+
 }
 export default ItemCount
 

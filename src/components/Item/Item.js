@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom'
 
 
 const Item = ({id, name, img, price,}) => {
+    
     return (
-        <div className='flex flex-col justify-between items-center w-[90%] h-[300px] bg-white gap-3 rounded-xl shadow-md overflow-auto py-4 container mx-auto '>
+        <div className='flex flex-col justify-between items-center w-[90%] h-[300px] bg-white gap-3 rounded-xl shadow-md overflow-auto py-4 container mx-auto hover:scale-110 transition duration-150 ease-out hover:ease-in'>
             <h1 className='font-medium'>{name}</h1>
             <img src={img} alt={name} className="max-h-[120px]"/>
             <p className='text-gray-600'> Precio: ${price}</p>
