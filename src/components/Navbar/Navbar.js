@@ -43,11 +43,6 @@ useEffect(() => {
                 })
             }
 
-
-
-                {/* <Link to = "/category/hogar" className='text-white font-semibold hover:text-secondary transition-all delay-50'>Hogar</Link>
-                <Link to = "/category/figuras" className='text-white font-semibold  hover:text-secondary transition-all delay-50'>Figuras</Link>
-                <Link to = "/category/personalizados" className='text-white font-semibold  hover:text-secondary transition-all delay-50'>Personalizados</Link> */}
             </nav>
             <div className='flex gap-5'>
                 <button><CartWidget /></button>
