@@ -25,7 +25,7 @@ const Cart = () => {
             {cart.map(product => <ItemCart key={product.id} product={product} />)}
             <p className="flex justify-center text-2xl m-10 font-bold">Total: ${totalPrice()}</p>
             <div >
-                <Link to='/' className="bg-secondary text-white rounded-xl px-3 py-1 hover:opacity-75 flex justify-center text-center w-[50%] m-auto">Realizar Pago</Link>
+                <Link to='/checkout' className="bg-secondary text-white rounded-xl px-3 py-1 hover:opacity-75 flex justify-center text-center w-[50%] m-auto">Realizar Pago</Link>
             </div>
         </div>
         )

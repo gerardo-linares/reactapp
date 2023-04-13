@@ -1,21 +1,23 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import {getFirestore} from "firebase/firestore";
+//Import the functions you need from the SDKs you need
+ import { initializeApp } from "firebase/app";
+ import {getFirestore} from "firebase/firestore";
 
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+// // TODO: Add SDKs for Firebase products that you want to use
+// // https://firebase.google.com/docs/web/setup#available-libraries
+
+
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyCzM9dAmHKdABFz8HY_5kBh3og5RwYIiAc",
-    authDomain: "ecommerce-65d25.firebaseapp.com",
-    projectId: "ecommerce-65d25",
-    storageBucket: "ecommerce-65d25.appspot.com",
-    messagingSenderId: "492053935740",
-    appId: "1:492053935740:web:3f2d68c5fe91698124fbf9"
+    apiKey: "AIzaSyCmKtmjkDdwSFL5tx147tp5WsjDLiUY16k",
+    authDomain: "ecommerce-94a8a.firebaseapp.com",
+    projectId: "ecommerce-94a8a",
+    storageBucket: "ecommerce-94a8a.appspot.com",
+    messagingSenderId: "28231201955",
+    appId: "1:28231201955:web:01bf89df39b3ff117e7b16"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-// Initialize Firebase
+ // Initialize Firebase
 export const db = getFirestore(app);
