@@ -3,28 +3,26 @@ import CartWidget from '../CartWidget/CartWidget'
 import { RiMenu3Fill,RiCloseFill } from "react-icons/ri";
 import { useState } from 'react';
 import {Link} from 'react-router-dom'
-import { collection, getDocs, orderBy, query } from 'firebase/firestore';
-import { db } from '../../services/firebase/firebaseConfig';
+import { getCategoriesRef } from '../../services/firebase/firestore/categories';
 
 
 const Navbar = () => {
 
 const[openMenu, setOpenMenu] = useState(false)
 
-const [categories, setCategories] = useState ([])
+    const [categories, setCategories] = useState([])
 
-useEffect(() => {
+    useEffect(() => {
 
-    const categoriesRef = query(collection(db, 'categories'), orderBy('order'))
-    
-    getDocs(categoriesRef)
-    .then(snapshot =>{
-        const categoriesAdapted = snapshot.docs.map(doc =>{
-            const data = doc.data()
-            return { id: doc.id, ...data}
-        })
-        setCategories(categoriesAdapted)
-    })
+        getCategoriesRef()
+
+            .then(categories => {
+                setCategories(categories)
+            })
+            .catch(error => {
+                console.log(error)
+            })
+
 }, [])
 
 
