@@ -7,6 +7,7 @@ import { CartProvider } from './context/CartContext';
 import Cart from './components/Cart/Cart';
 import Checkout from './components/checkout/Checkout';
 import { NotificationProvider } from './notification/NotificationService';
+import Footer from './components/Footer/Footer';
 
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
               <Route path="/cart" element={<h1><Cart /></h1>} />
               <Route path="/checkout" element={<Checkout />} />
             </Routes>
+            <Footer/>
           </CartProvider>
         </NotificationProvider>
       </BrowserRouter>
